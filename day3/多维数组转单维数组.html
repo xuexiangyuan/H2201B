@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var a = ["1", "2", ["3", ["4", {old: "23"}, "5"], "6"]];
+            var newArr = [];
+        function fun(arr){
+        for(var i=0;i<arr.length;i++){
+            if(Array.isArray(arr[i])){
+                fun(arr[i]);
+            }   else{
+                newArr.push(arr[i]);
+                }
+            }
+        }
+         fun(a);
+        console.log(newArr) // ["1","2","3","4",{old:"23"},"5","6"]
+    </script>
+</body>
+</html>
