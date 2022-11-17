@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="ad"></div>
+
+    <div class="one">
+        <h2>点击切换颜色</h2>
+        <div class="title">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>
+    <style>
+        id{
+            background-color: #ccc;
+        }
+        .one{
+            margin:50px auto;
+        }
+        .title{
+            display: flex;
+
+        }
+        .item {
+            width: 50px;
+            height: 50px;
+            background-color: #ccc;
+            margin-right: 10px;
+            /* border-radius: ; */
+        }
+    </style>
+
+    <script>
+
+
+//  监听延迟盒子变色
+console.log('==========箭头函数实践例子===============');
+        // let ad= document.getElementById('ad')
+        // ad.addEventListener('click',function(){
+        //     setTimeout(()=>{
+        //         this.style.background='pink'
+        //     },2000)
+        // })
+
+        // //需求二 从数组中返回偶数的元素
+        // const arr=[1,6,9,10,100,25]
+        // const resultt =arr.filter(function(item){
+        //     if(item %2===0){
+        //         return true
+        //     }
+        //     else{
+        //         return false
+        //     }
+        // })
+
+
+        // let ad= document.getElementById('ad')
+        // ad.addEventListener('click',function(){
+        //     setTimeout(()=>{
+        //         this.style.background='pink'
+        //     },2000)
+        // })
+
+        // const arr=[1,6,9,10,100,25]
+        // const resultt =arr.filter(function(item){
+        //     if(item %2===0){
+        //         return true
+        //     }
+        //     else{
+        //         return false
+        //     }
+        // })
+
+
+
+        // let ad= document.getElementById('ad')
+        // ad.addEventListener('click',function(){
+        //     setTimeout(()=>{
+        //         this.style.background='pink'
+        //     },2000)
+        // })
+
+        
+        // const arr=[1,6,9,10,100,25]
+        // const resultt =arr.filter(function(item){
+        //     if(item %2===0){
+        //         return true
+        //     }
+        //     else{
+        //         return false
+        //     }
+        // })
+        
+        console.log('==========箭头函数实践例子===============');
+        
+
+        // const resultr =arr.filter(item=>item %2===0)
+        // console.log(resultr);
+
+        // const resultr =arr.filter(item=>item %2===0)
+        // console.log(resultr);
+        
+        // const resultr =arr.filter(item=>item %2===0)
+        // console.log(resultr);
+
+        // let ad= document.getElementById('ad')
+        // ad.addEventListener('click',function(){
+        //     setTimeout(()=>{
+        //         this.style.background='pink'
+        //     },2000)
+        // })
+
+        // let ad= document.getElementById('ad')
+        // ad.addEventListener('click',function(){
+        //     setTimeout(()=>{
+        //         this.style.background='pink'
+        //     },2000)
+        // })
+
+        let ad= document.getElementById('ad')
+        ad.addEventListener('click',function(){
+            setTimeout(()=>{
+                this.style.background='pink'
+            },2000)
+        })
+
+        //需求二 从数组中返回偶数的元素
+        // const arr=[1,6,9,10,100,25]
+        // const resultt =arr.filter(function(item){
+        //     if(item %2===0){
+        //         return true
+        //     }
+        //     else{
+        //         return false
+        //     }
+        // })
+
+        // const resultr =arr.filter(item=>item %2===0)
+        // console.log(resultr);
+
+        // const arr=[1,6,9,10,100,25]
+        // const resultt =arr.filter(function(item){
+        //     if(item %2===0){
+        //         return true
+        //     }
+        //     else{
+        //         return false
+        //     }
+        // })
+
+        // const resultr =arr.filter(item=>item %2===0)
+        // console.log(resultr);
+
+        const arr=[1,6,9,10,100,25]
+        const resultt =arr.filter(function(item){
+            if(item %2===0){
+                return true
+            }
+            else{
+                return false
+            }
+        })
+
+        const resultr =arr.filter(item=>item %2===0)
+        console.log(resultr);
+
+        
+
+        
+  console.log('=======点击变色======');
+        // let divlist = document.getElementsByClassName('item')
+        // for (let i = 0; i < divlist.length; i++) {
+        //     divlist[i].onclick = function () {
+        //         divlist[i].style.background = 'pink'
+        //     }
+        // }
+
+        // let divlist = document.getElementsByClassName('item')
+        // for (let i = 0; i < divlist.length; i++) {
+        //     divlist[i].onclick = function () {
+        //         divlist[i].style.background = 'pink'
+        //     }
+        // }
+
+        // let divlist = document.getElementsByClassName('item')
+        // for (let i = 0; i < divlist.length; i++) {
+        //     divlist[i].onclick = function () {
+        //         divlist[i].style.background = 'pink'
+        //     }
+        // }
+        
+
+
+        //声明变量
+        // let a;
+        // let b;
+        // let e;
+        // let f= 521, g='iloveyou',h=[]
+
+         // let a;
+         // let b;
+         // let e;
+         // let f= 521, g='iloveyou',h=[]
+         
+         // let a;
+         // let b;
+         // let e;
+         // let f= 521, g='iloveyou',h=[]
+
+
+        // // 1.变量不能重复声明
+        // {
+        //     let girl ='周扬青'
+        // }
+        // let girl ='你好'
+        // console.log(girl);
+
+        // {
+        //     let girl ='周扬青'
+        // }
+        // let girl ='你好'
+        // console.log(girl);
+
+        // {
+        //     let girl ='周扬青'
+        // }
+        // let girl ='你好'
+        // console.log(girl);
+
+
+        // // 2. 块级作用域 全局 函数 eval
+        // console.log(song);
+        // let song='恋爱达人'
+
+        // console.log(song);
+        // let song='恋爱达人'
+
+        // console.log(song);
+        // let song='恋爱达人'
+
+
+        // // 4.不影响作用域
+
+        // let scholl= '清华大学'
+        // function fn(){
+        //     console.log(scholl);
+        // }
+        // fn()
+
+        // let scholl= '清华大学'
+        // function fn(){
+        //     console.log(scholl);
+        // }
+        // fn()
+
+        // let scholl= '清华大学'
+        // function fn(){
+        //     console.log(scholl);
+        // }
+        // fn()
+
+            //////////////////////////
+            // const
+        // 总结 const 1。块级作用域 2. 声明常量不可以更改，用大写来表示，
+        //重点 1.声明基本数据类型不可更改 2. 声明复杂数据类型 值可以更改 因为堆和栈
+        //复杂数据类型只修改堆中间的内容， 栈的引用并没有变
+console.log('===========解构===========');
+        // const F4=['肖战','蔡徐坤','王一博','张杰']
+        // //解构
+        // let [a,b,c,d] =F4
+        // //赋值
+        // let  f=F4[0]
+        // console.log(f);
+
+
+
+        // const ZHAO={
+        //     name:'赵本山',
+        //     age:18,
+        //     job:function (){
+        //         console.log('小品创作');
+        //     }
+        // }
+
+
+        // const F4=['肖战','蔡徐坤','王一博','张杰']
+        // //解构
+        // let [a,b,c,d] =F4
+        // //赋值
+        // let  f=F4[0]
+        // console.log(f);
+
+
+
+        // const ZHAO={
+        //     name:'赵本山',
+        //     age:18,
+        //     job:function (){
+        //         console.log('小品创作');
+        //     }
+        // }
+
+
+        // const F4=['肖战','蔡徐坤','王一博','张杰']
+        // //解构
+        // let [a,b,c,d] =F4
+        // //赋值
+        // let  f=F4[0]
+        // console.log(f);
+
+
+
+        // const ZHAO={
+        //     name:'赵本山',
+        //     age:18,
+        //     job:function (){
+        //         console.log('小品创作');
+        //     }
+        // }
+
+
+        //模板字符串
+            //原生字符串拼接
+        // let resulta ='<ul>'
+        //             +'<li>沈腾</li>'
+        //             +'<li>玛丽</li>'
+        //             +'</ul>'
+
+
+        // let est =`
+        //             <ul>
+        //                 <li>中午</li>
+        //                 <li>吃</li>
+        //                 <li>什么</li>
+        //                 <li>呀</li>
+                
+        //         `
+
+        //     document.write(resulta)
+        //     document.write(est)
+
+
+        // let resulta ='<ul>'
+        //             +'<li>沈腾</li>'
+        //             +'<li>玛丽</li>'
+        //             +'</ul>'
+
+
+        // let est =`
+        //             <ul>
+        //                 <li>中午</li>
+        //                 <li>吃</li>
+        //                 <li>什么</li>
+        //                 <li>呀</li>
+                
+        //         `
+
+        //     document.write(resulta)
+        //     document.write(est)
+
+
+
+
+        // let resulta ='<ul>'
+        //             +'<li>沈腾</li>'
+        //             +'<li>玛丽</li>'
+        //             +'</ul>'
+
+
+        // let est =`
+        //             <ul>
+        //                 <li>中午</li>
+        //                 <li>吃</li>
+        //                 <li>什么</li>
+        //                 <li>呀</li>
+                
+        //         `
+
+        //     document.write(resulta)
+        //     document.write(est)
+
+
+            //对象的简化写法
+              
+            // let name='高薪'
+            // let hope =function(){
+            //     console.log('我希望高薪就业');
+            // }
+
+            // const PERSION ={
+            //     name,
+            //     hope,
+            // }
+
+
+            // let name='高薪'
+            // let hope =function(){
+            //     console.log('我希望高薪就业');
+            // }
+
+            // const PERSION ={
+            //     name,
+            //     hope,
+            // }
+
+
+            let name='高薪'
+            let hope =function(){
+                console.log('我希望高薪就业');
+            }
+
+            const PERSION ={
+                name,
+                hope,
+            }
+
+            
+
+            //箭头函数
+
+            // function getName(){
+            //     console.log(this.name);
+            // }
+            // let getName2=()=>{
+            //     console.log(this.name);
+            // }
+
+            // window.name='谷'
+            // const school={
+            //     name:'ATQUIGU'
+            // }
+            // getName.call(school)
+            // getName2.call(school)
+
+
+            // function getName(){
+            //     console.log(this.name);
+            // }
+            // let getName2=()=>{
+            //     console.log(this.name);
+            // }
+
+            // window.name='谷'
+            // const school={
+            //     name:'ATQUIGU'
+            // }
+            // getName.call(school)
+            // getName2.call(school)
+
+            function getName(){
+                console.log(this.name);
+            }
+            let getName2=()=>{
+                console.log(this.name);
+            }
+
+            window.name='谷'
+            const school={
+                name:'ATQUIGU'
+            }
+            getName.call(school)
+            getName2.call(school)
+
+
+
+            // 下午 rest参数
+            
+            // function date(){
+            //     console.log(arguments);
+            // }
+            // date('白芷','阿娇','思慧')
+
+            // function date(){
+            //     console.log(arguments);
+            // }
+            // date('白芷','阿娇','思慧')
+
+            // function date(){
+            //     console.log(arguments);
+            // }
+            // date('白芷','阿娇','思慧')
+
+
+
+            // rest 参数
+            // function date(...args){
+                // console.log(args);
+            // }
+            // date('白芷','阿娇','思慧')
+
+
+            // function date(...args){
+            //     console.log(args);
+            // }
+            // date('白芷','阿娇','思慧')
+
+
+            // function date(...args){
+            //     console.log(args);
+            // }
+            // date('白芷','阿娇','思慧')
+
+
+
+            // rest 参数必须要放到参数后面
+            // function fn(a,b,...args){
+            //     console.log(a);
+            //     console.log(b);
+            //     console.log(args);
+            // }
+            // fn(1,2,3,4,5,6)
+
+            // function fn(a,b,...args){
+            //     console.log(a);
+            //     console.log(b);
+            //     console.log(args);
+            // }
+            // fn(1,2,3,4,5,6)
+
+
+            // function fn(a,b,...args){
+            //     console.log(a);
+            //     console.log(b);
+            //     console.log(args);
+            // }
+            // fn(1,2,3,4,5,6)
+
+
+            // 扩展运算符
+            // 1.应用在数组的合并
+            // 2.将伪数组转为数组
+            // 3.数组的克隆
+
+
+            // 1.数组的合并 
+            // const kuaizi =['王太利','肖扬']
+            // const fenghuang =['曾毅','玲花']
+            // const allArray =[...kuaizi,...fenghuang]
+            // const allArray1= kuaizi.concat(fenghuang)
+
+            // const kuaizi =['王太利','肖扬']
+            // const fenghuang =['曾毅','玲花']
+            // const allArray =[...kuaizi,...fenghuang]
+            // const allArray1= kuaizi.concat(fenghuang)
+
+
+            // const kuaizi =['王太利','肖扬']
+            // const fenghuang =['曾毅','玲花']
+            // const allArray =[...kuaizi,...fenghuang]
+            // const allArray1= kuaizi.concat(fenghuang)
+
+            //数组的克隆
+            // const sanzhihua= ['E','G','M']
+            // const sanyecao =[...sanzhihua]
+
+            // const sanzhihua= ['E','G','M']
+            // const sanyecao =[...sanzhihua]
+
+            // const sanzhihua= ['E','G','M']
+            // const sanyecao =[...sanzhihua]
+
+            //将伪数组转为真正的数组
+            // const divs =document.querySelectorAll('div')
+            // const divArr =[...divs]
+            // console.log(divArr);
+
+            // const divs =document.querySelectorAll('div')
+            // const divArr =[...divs]
+            // console.log(divArr);
+
+            const divs =document.querySelectorAll('div')
+            const divArr =[...divs]
+            console.log(divArr);
+
+
+            // 创建Symbol
+            // let s =Symbol()
+            // let s2=Symbol('清华大学')
+            // let s3=Symbol('清华大学')
+            
+            // let s4=Symbol.for('清华大学')
+            // let s5=Symbol.for('清华大学')
+            // console.log(s,s2,s3,s4,s5);
+
+            // 不能与其他数据进行运算
+            // let result =s+100
+            // let result =s>100
+            // let result =s+s
+
+            // let s =Symbol()
+            // let s2=Symbol('清华大学')
+            // let s3=Symbol('清华大学')
+            
+            // let s4=Symbol.for('清华大学')
+            // let s5=Symbol.for('清华大学')
+            // console.log(s,s2,s3,s4,s5);
+
+            // let result =s+100
+            // let result =s>100
+            // let result =s+s
+            
+            let s =Symbol()
+            let s2=Symbol('清华大学')
+            let s3=Symbol('清华大学')
+            
+            let s4=Symbol.for('清华大学')
+            let s5=Symbol.for('清华大学')
+            console.log(s,s2,s3,s4,s5);
+            // let result =s+100
+            // let result =s>100
+            // let result =s+s
+    </script>
+</body>
+
+</html>
