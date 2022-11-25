@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // 属性名表达式
+        // 定义对象的属性，有两种方法
+        // 1.用标识符作为属性名
+        // 2.用表达式作为属性名，要将表达式放在方括号内
+
+
+
+        // super关键字是用来调用原型对象的属性和方法的
+        // const a={
+        //     bo:'你好'
+        // }
+        // const objec={
+        //     bo:'我很好',
+        //     find(){
+        //         return super.bo
+        //     }
+        // }
+
+        // Object.setPrototypeOf(objec,a)
+        // console.log(objec.find());
+        // objec.find()
+
+
+        // const a={
+        //     bo:'你好'
+        // }
+        // const objec={
+        //     bo:'我很好',
+        //     find(){
+        //         return super.bo
+        //     }
+        // }
+
+        // Object.setPrototypeOf(objec,a)
+        // console.log(objec.find());
+        // objec.find()
+
+
+        const a={
+            bo:'你好'
+        }
+        const objec={
+            bo:'我很好',
+            find(){
+                return super.bo
+            }
+        }
+
+        Object.setPrototypeOf(objec,a)
+        console.log(objec.find());
+        objec.find()
+    </script>
+</body>
+</html>
