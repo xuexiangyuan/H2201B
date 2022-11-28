@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js//vue.js"></script>
+</head>
+<body>
+    <div id="add">
+        <h2>欢迎来{{name}}部落</h2>
+        <a href="./事件的使用.html" @click.prevent="show">点击进行跳转</a>
+
+        <div class="box"  @click="add(1)">
+            <div class="box1" @click.stop="add(2)">
+
+            </div>
+        </div>
+
+
+        <button @click.once="btn">事件只触发一次</button>
+
+
+        <div class="box"  @click.capture="del(1)">
+            <div class="box1" @click.stop="del(2)">
+
+            </div>
+        </div>
+
+        <div class="box1" @click.stop="aa">
+            <button @click="aaa">点我提示信息</button>
+        </div>
+
+
+        <ul @wheel="demo">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+        </ul>
+    </div>
+</body>
+<script>
+
+Vue.config.productiopTip=false
+    new Vue({
+        el:'#add',
+        data:{
+            name:'德玛西亚'
+        },
+        methods: {
+            show(event){
+                // event.preventDefault();  //原生阻止事件默认触发
+                alert('提示但是不跳转')
+            },
+            add(value){
+                // event.stopPropagation();  //阻止冒泡，只触发一次
+                console.log(value);
+                // alert('触发一遍')
+            },
+            btn(){
+                // alert('事件只触发一次')
+            },
+            del(msg){
+                console.log(msg);
+            },
+            aaa(){
+                console.log('我被触发了');
+            },
+            demo(){
+               for (let index = 0; index <100000 ; index++) {
+                console.log(index);
+               }
+               
+            }
+        },
+    })
+</script>
+</html>
+
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+    }
+    .box1{
+        width: 150px;
+        height: 150px;
+        background-color: palegreen;
+    }
+    ul{
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        overflow: auto;
+    }
+    li{
+        width: 200px;
+        height: 100px;
+    }
+</style>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js//vue.js"></script>
+</head>
+<body>
+    <div id="add">
+        <h2>{{name}}</h2>
+        <button v-on:click="msg">点击我提示消息</button>
+        <button v-on:click="msg1">点击我提示消息(我不传递参数)</button>
+        <button v-on:click="msg2($event,'张三')">点击我提示消息(我传递参数)</button>
+    </div>
+</body>
+</html>
+
+<script>
+    Vue.config.productionTip=false  //阻止vue在启动时生成生产提示
+    new Vue({
+        el:'#add',
+        data:{
+            name:'张三'
+        },
+        methods: {
+            msg(){
+                alert('提示消息')
+            },
+            msg1(event){
+                console.log(event.target.innerText);
+                alert('我不传递参数')
+            },
+            msg2(event,value){
+                console.log(value);
+                console.log(event.target.innerText);
+                alert('我传递参数')
+            }
+        },
+    })
+</script>

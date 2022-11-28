@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js//vue.js"></script>
+</head>
+<body>
+    <div id="add">
+        <h1>欢迎来{{name}}部落</h1>
+        <button v-on:click="show">点我提示信息(不传参)</button>
+        <button v-on:click="show1(111111,$event)">点我提示信息(传参)</button>
+    </div>
+</body>
+<script>
+    Vue.config.productiopTip=false
+    new Vue({
+        el:'#add',
+        data:{
+            name:'德玛西亚'
+        },
+        methods: {
+            show(){
+                alert('人在塔在')
+            },
+            show1(value,event){
+                console.log(value);
+                console.log(event.target.innerText);
+                // alert('我不传递参数')
+            }
+        },
+    })
+</script>
+</html>
